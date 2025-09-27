@@ -1,0 +1,81 @@
+/* quienessomos.css */
+
+/*
+* Estilos globales y reseteo básico
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding: 0;
+    background-color: #f4f4f9; /* Fondo suave */
+    color: #333; /* Color de texto principal */
+    line-height: 1.6;
+}
+
+/*
+* Estilos del encabezado (header)
+*/
+header {
+    background-color: #0056b3; /* Un azul institucional */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*
+* Estilos del contenedor principal (.padre)
+*/
+.padre {
+    max-width: 900px; /* Ancho máximo para el contenido */
+    margin: 40px auto; /* Centra el contenedor horizontalmente */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra el texto y la imagen dentro del contenedor */
+}
+
+/*
+* Estilos de los párrafos
+*/
+.padre p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    padding: 0 15px; /* Pequeño padding horizontal para mejor lectura */
+}
+
+/*
+* Estilos de la imagen
+*/
+.padre img {
+    max-width: 100%; /* Asegura que la imagen sea responsiva */
+    height: auto;
+    display: block; /* Para que margin: auto funcione si quieres centrarla individualmente */
+    margin: 30px auto; /* Margen superior/inferior para separarla del texto */
+    border-radius: 6px;
+    border: 3px solid #ccc; /* Borde simple para resaltar la imagen */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/*
+* Estilos del pie de página (footer)
+*/
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* Lo fija al final de la ventana */
+    bottom: 0;
+    width: 100%;
+    /* Si prefieres que el footer esté al final del contenido y no fijo,
+       usa 'position: static;' o elimínalo y considera un padding-bottom en body */
+}

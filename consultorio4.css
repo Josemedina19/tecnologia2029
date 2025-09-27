@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: linear-gradient(145deg, #1f0045, #5e00a3);
+    color: #00f9ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #00f9ff;
+    width: 320px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #00f9ff;
+    text-shadow: 0 0 10px #00f9ff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7fffd4;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #222;
+    color: #00f9ff;
+    font-size: 16px;
+}
+
+button {
+    background: linear-gradient(to right, #00f9ff, #00c4ff);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.resultado {
+    margin-top: 20px;
+}
+
+.resultado p {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+    text-shadow: 0 0 5px #00f9ff, 0 0 10px #00f9ff;
+}
+
+#bruto,
+#retencion {
+    color: #00f9ff;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, #00f9ff, transparent);
+    margin: 15px 0;
+}
+
+#neto {
+    color: #44ffaa;
+    font-size: 20px;
+    text-shadow: 0 0 5px #44ffaa, 0 0 10px #44ffaa;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" href="consulta1.css" />
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Calculadora de nuevo sueldo</h1>
+        <label for="base">Sueldo base:</label>
+        <input id="base" type="number" value="1000" />
+
+        <label for="cat">Categoría:</label>
+        <select id="cat">
+      <option value="0.3">Categoría 1 (30%)</option>
+      <option value="0.2">Categoría 2 (20%)</option>
+      <option value="0.15">Categoría 3 (15%)</option>
+      <option value="0">Sin aumento</option>
+    </select>
+
+        <button onclick="calcular()">Calcular</button>
+        <p id="resultado"></p>
+    </div>
+
+    <script>
+        function calcular() {
+            const base = Number(document.getElementById('base').value);
+            const aumento = Number(document.getElementById('cat').value);
+            const nuevo = base + base * aumento;
+            document.getElementById('resultado').textContent = `Nuevo sueldo: $${nuevo.toFixed(2)}`;
+        }
+    </script>
+</body>
+
+</html>

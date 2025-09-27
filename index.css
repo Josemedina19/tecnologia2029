@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #0f0320, #100B2E);
+    color: #00fff7;
+}
+
+
+/* Header */
+
+header {
+    background-color: #000;
+    padding: 30px 0;
+    box-shadow: 0 0 20px #00fff7;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #060016;
+    padding: 15px 0;
+    position: relative;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00fff7;
+    font-weight: bold;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+
+/* Dropdown Menu */
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #060016;
+    border: 1px solid #00fff7;
+    box-shadow: 0 0 10px #00fff7;
+    z-index: 1000;
+    min-width: 160px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: #00fff7;
+}
+
+.submenu li a:hover {
+    background-color: #111;
+    text-shadow: 0 0 10px #00fff7;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+/* Main content */
+
+main {
+    padding: 40px 20px;
+}
+
+.padres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hijo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.nieto {
+    background-color: #0a0a0a;
+    border: 1px solid #00fff7;
+    box-shadow: 0 0 20px #00fff7;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.nieto:hover {
+    transform: scale(1.05);
+}
+
+.nieto h2 {
+    color: #00fff7;
+    margin-bottom: 15px;
+    text-shadow: 0 0 5px #00fff7;
+}
+
+.nieto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.nieto p {
+    color: #cccccc;
+    font-size: 0.95em;
+}
+
+
+/* Social Media */
+
+.social {
+    text-align: center;
+}
+
+.social h2 {
+    color: #00fff7;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #00fff7;
+}
+
+.social a {
+    font-size: 2em;
+    margin: 0 10px;
+    color: #00fff7;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 15px #00fff7;
+}

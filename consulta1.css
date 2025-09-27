@@ -1,0 +1,107 @@
+/* consulta1.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at center, #021529 0%, #0f1c36 70%, #121e44 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    color: #00f9ff;
+    user-select: none;
+    overflow: hidden;
+}
+
+.calculator {
+    background: rgba(1, 30, 55, 0.85);
+    border-radius: 25px;
+    box-shadow: 0 0 30px 5px #00f9ffaa, inset 0 0 40px 5px #00f9ff44;
+    padding: 40px 50px;
+    width: 350px;
+    text-align: center;
+    transition: box-shadow 0.4s ease;
+}
+
+.calculator:hover {
+    box-shadow: 0 0 45px 10px #00f9ffee, inset 0 0 50px 10px #00f9ff55;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-shadow: 0 0 12px #00f9ffee;
+    letter-spacing: 3px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    text-shadow: 0 0 10px #00f9ffbb;
+    cursor: pointer;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 18px;
+    border-radius: 18px;
+    border: 2px solid #00f9ff77;
+    background-color: #041f3d;
+    color: #00f9ff;
+    font-size: 1.1rem;
+    outline: none;
+    box-shadow: inset 0 0 15px #00f9ff55;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #00f9ffff;
+    box-shadow: 0 0 20px #00f9ffcc, inset 0 0 20px #00f9ffff;
+}
+
+button {
+    margin-top: 30px;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #04212f;
+    background: linear-gradient(90deg, #00f9ff, #00a4ff);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 0 30px #00f9ffcc, 0 4px 8px rgba(0, 255, 255, 0.3);
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    filter: drop-shadow(0 0 5px #00e5ffcc);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #00a4ff, #00f9ff);
+    box-shadow: 0 0 45px #00f9ffee, 0 6px 12px rgba(0, 255, 255, 0.5);
+}
+
+#resultado {
+    margin-top: 40px;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #00f9ff;
+    text-shadow: 0 0 20px #00f9ffcc, 0 0 40px #00f9ffbb;
+    letter-spacing: 1.5px;
+    min-height: 40px;
+    user-select: text;
+    transition: opacity 0.4s ease;
+}
